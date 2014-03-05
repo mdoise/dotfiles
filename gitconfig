@@ -25,11 +25,11 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
 [user]
-name = Ian Schreuder
-email = ian.schreuder@gmail.com
+	name = Ian Schreuder
+	email = ian.schreuder@gmail.com
 
 [credential]
-helper = osxkeychain
+	helper = osxkeychain
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -64,6 +64,8 @@ helper = osxkeychain
 	changed = green
 	untracked = cyan
 [merge]
+	tool = opendiff
+	ff = true
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 

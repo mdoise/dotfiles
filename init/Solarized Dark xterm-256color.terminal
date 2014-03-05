@@ -11,6 +11,8 @@
 	ZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KSlJabpq+3usPV2N0AAAAAAAAB
 	AQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA3w==
 	</data>
+	<key>Bell</key>
+	<false/>
 	<key>BlinkText</key>
 	<false/>
 	<key>CursorColor</key>
@@ -35,6 +37,8 @@
 	<true/>
 	<key>FontWidthSpacing</key>
 	<real>1.004032258064516</real>
+	<key>Linewrap</key>
+	<true/>
 	<key>ProfileCurrentVersion</key>
 	<real>2.02</real>
 	<key>SelectionColor</key>
@@ -146,8 +150,12 @@
 	</data>
 	<key>rowCount</key>
 	<integer>40</integer>
+	<key>shellExitAction</key>
+	<integer>0</integer>
 	<key>type</key>
 	<string>Window Settings</string>
+	<key>warnOnShellCloseAction</key>
+	<integer>1</integer>
 	<key>whiteColour</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm

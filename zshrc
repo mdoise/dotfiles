@@ -15,7 +15,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -27,7 +27,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
+DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -49,4 +49,16 @@ done
 unset file
 
 # Customize to your needs...
-export PATH=$PATH:/Users/ian/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/ian/.rvm/bin
+PATH=$PATH:/Users/ian/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH
+
+pry () {
+    if [ -e Gemfile.lock ] && [ -e ./config/environment.rb ] && grep -q pry Gemfile.lock
+    then
+        bundle exec pry -r ./config/environment "$@"
+    else
+        /usr/bin/pry "$@"
+    fi
+}
+
+
