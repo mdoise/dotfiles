@@ -1,16 +1,30 @@
 # 
 alias aba='cd ~/Dev/abaqis2'
-alias a3='cd ~/Dev/abaqis3'
+alias a4b='cd ~/Dev/abaqis-be'
+alias a3='cd ~/Dev/abaqis2-fe'
 alias moh='cd ~/Dev/MoH'
 alias emp='cd ~/Dev/EmpSat'
-alias abdb='rake db:drop db:create db:migrate db:seed'
+alias pac='cd ~/Dev/pac-sight-be'
+alias pach='cd ~/Dev/pac-sight-helmet'
+alias pacf='cd ~/Dev/pac-sight-fe'
+alias bbe='cd ~/Dev/Bridge21/bridge21_api'
+alias bfe='cd ~/Dev/Bridge21/bridge21_frontend'
+alias bap='cd ~/Dev/Bridge21/bap-web'
+alias aba='cd ~/Dev/abaqis2'
+alias abdb='rake db:drop db:create'
+alias abm='rake db:migrate'
+alias abs='rake db:seed'
 alias abdbtest='rake db:drop RAILS_ENV=test; rake db:create RAILS_ENV=test; rake db:migrate RAILS_ENV=test'
 alias cls='clear'
 alias wget='curl -O'
 alias kx="ps -ef | grep ngin | grep -v grep | awk '{print $2}' | sudo xargs kill -9"
 alias psr='ps aux | grep '
 alias rrg='rake routes | grep '
-
+alias kul='kubectl logs'
+alias ku='kubectl'
+alias kud='kubectl describe pod'
+alias kup='kubectl get po -o wide'
+alias kuc='ku config get-contexts'
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -24,6 +38,14 @@ alias h="history"
 alias j="jobs"
 alias start_mysql='sudo /usr/local/opt/mariadb/bin/mysqld_safe &'¬
 alias stop_mysql='/usr/local/opt/mariadb10/bin/mysqladmin shutdown'¬
+
+alias dk=docker
+alias dkb='docker build'
+alias dkclean='docker rm `docker ps -aq -f status=exited`'
+alias dkcleanhard='docker rm -f `docker ps -aq`'
+alias dki='docker images'
+alias dkr='docker run'
+alias dkrmi='docker rmi'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
