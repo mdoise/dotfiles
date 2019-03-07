@@ -31,6 +31,19 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+alias b21d='bundle exec rake db:drop'
+alias b21c='bundle exec rake db:create'
+alias b21sl='bundle exec rake db:schema:load'
+alias b21m='bundle exec rake db:migrate'
+alias b21s='bundle exec rake db:seed'
+alias b21db='bundle exec rake db:drop;bundle exec rake db:create;bundle exec rake db:schema:load;bundle exec rake db:migrate'
+alias b21dbtest='bundle exec rake db:drop RAILS_ENV=test;bundle exec rake db:create RAILS_ENV=test;bundle exec rake db:schema:load RAILS_ENV=test;bundle exec rake db:migrate RAILS_ENV=test'
+
+alias b21dt='bundle exec rake db:drop RAILS_ENV=test'
+alias b21ct='bundle exec rake db:create RAILS_ENV=test'
+alias b21st='bundle exec rake db:schema:load RAILS_ENV=test'
+alias b21mt='bundle exec rake db:migrate RAILS_ENV=test'
+
 # Shortcuts
 alias dt="cd ~/Desktop"
 alias g="git"
