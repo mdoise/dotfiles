@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/phil/dotfiles'
-let g:netrw_dirhist_2='/Users/phil/Dev/abaqis2'
-let g:netrw_dirhist_3='/Users/phil/Dev'
+let g:netrw_dirhist_1='/Users/phillipdoise/dotfiles'
+let g:netrw_dirhist_2='/Users/phillipdoise/dev/abaqis2'
+let g:netrw_dirhist_3='/Users/phillipdoise/dev'

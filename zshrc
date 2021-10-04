@@ -49,7 +49,7 @@ done
 unset file
 
 # Customize to your needs...
-PATH=$PATH:/Users/phil/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PATH=$PATH:/Users/phillipdoise/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH
 
 pry () {
@@ -60,5 +60,7 @@ pry () {
         /usr/bin/pry "$@"
     fi
 }
+
+source ~/.bash_profile
 
 

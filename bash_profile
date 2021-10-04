@@ -43,3 +43,8 @@ export R_HOME=/Library/Frameworks/R.framework/Resources
 
 # RVM path
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+echo "hi"
+
+# NVM
+source ~/.nvm/nvm.sh
