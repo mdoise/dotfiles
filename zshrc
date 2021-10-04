@@ -52,13 +52,6 @@ unset file
 PATH=$PATH:/Users/phillipdoise/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH
 
-pry () {
-    if [ -e Gemfile.lock ] && [ -e ./config/environment.rb ] && grep -q pry Gemfile.lock
-    then
-        bundle exec pry -r ./config/environment "$@"
-    else
-        /usr/bin/pry "$@"
-    fi
-}
+source ~/.nvm/nvm.sh
 
 
