@@ -61,6 +61,4 @@ pry () {
     fi
 }
 
-source ~/.bash_profile
-
 
