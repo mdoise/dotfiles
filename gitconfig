@@ -25,8 +25,8 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
 [user]
-	name = Phillip Doise
-	email = p.doise@gmail.com
+	name = Michael.Doise
+	email = michael.doise@healthastream.com
 
 [credential]
 	helper = osxkeychain

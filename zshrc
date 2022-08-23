@@ -49,7 +49,7 @@ done
 unset file
 
 # Customize to your needs...
-PATH=$PATH:/Users/phillipdoise/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PATH=$PATH:/Users/Michael.Doise/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH
 
 source ~/.nvm/nvm.sh
